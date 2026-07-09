@@ -1,18 +1,21 @@
 # RCM Church Vizianagaram
 
-An interactive 3D church community website concept for RCM Church, Vizianagaram.
+A lightweight interactive 3D church and community website concept for RCM Church, Vizianagaram.
 
 ## Features
 
-- Interactive 3D church campus map
+- Interactive 3D church campus model
+- Drag, rotate and zoom controls
 - Day and night visual modes
-- Church history and community-focused presentation
-- Mass timings, meetings, events and rehearsal sections
-- Responsive single-page experience
+- 160-year heritage presentation
+- Sunday and weekday Mass schedule sections
+- Community meetings, music rehearsals and Bible-story content
+- Google Maps location link
+- Responsive single-page design
 
 ## Run locally
 
-Open `index.html` in a modern browser. For the best results, serve the folder through a local web server.
+Serve the repository with a small local web server because the 3D scene uses browser modules.
 
 ```bash
 python3 -m http.server 8000
@@ -20,6 +23,6 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Project files
+## Deployment
 
-The repository includes the standalone bundled page, original source pages, 3D scene scripts, support runtime and uploaded media assets.
+The project is ready for static hosting through GitHub Pages, Netlify or Vercel. The main website is contained in `index.html` and loads Three.js modules from a CDN.
