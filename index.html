@@ -44,8 +44,8 @@
 </main>
 <footer><div class="brand"><span class="mark">✝</span><span><strong>RCM CHURCH VIZIANAGARAM</strong><small>A PLACE OF WORSHIP · A HOME OF FAITH</small></span></div><span>GOD IS LOVE · VIZIANAGARAM, ANDHRA PRADESH</span></footer>
 <script type="module">
-  import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
-  import {OrbitControls} from 'https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js';
+  import * as THREE from 'https://esm.sh/three@0.160.0';
+  import {OrbitControls} from 'https://esm.sh/three@0.160.0/examples/jsm/controls/OrbitControls.js';
   let night=true; const scenes=[];
   function mat(color,rough=.75,metal=0){return new THREE.MeshStandardMaterial({color,roughness:rough,metalness:metal})}
   function box(parent,size,pos,color,rot=[0,0,0]){const m=new THREE.Mesh(new THREE.BoxGeometry(...size),mat(color));m.position.set(...pos);m.rotation.set(...rot);m.castShadow=m.receiveShadow=true;parent.add(m);return m}
